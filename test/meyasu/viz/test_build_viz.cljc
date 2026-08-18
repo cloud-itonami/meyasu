@@ -6,7 +6,7 @@
   (:require [clojure.test :refer [deftest is]]
             [clojure.string :as str]
             [clojure.java.io :as io]
-            [cheshire.core :as json]
+            [json.compat :as json]
             [meyasu.viz.build-viz-data :as b]))
 
 (def here (io/file "resources/viz"))
