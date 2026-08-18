@@ -1,7 +1,7 @@
 (require '[clojure.edn :as edn]
          '[clojure.java.io :as io]
          '[clojure.string :as str]
-         '[cheshire.core :as json])
+         '[json.compat :as json])
 
 (def root (.getCanonicalFile (io/file ".")))
 (def files (->> (file-seq root)

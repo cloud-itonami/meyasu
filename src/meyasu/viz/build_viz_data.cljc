@@ -6,7 +6,7 @@
   leg. A BUYER-transparency + supply-resilience surface, never a trading board (meyasu G1)."
   (:require [clojure.string :as str]
             [meyasu.methods.agent :as agent]
-            #?(:clj [cheshire.core :as json])))
+            [json.compat :as json]))
 
 (defn build-payload [seed-items]
   (let [fused (agent/handle-fuse {"items" seed-items})]
