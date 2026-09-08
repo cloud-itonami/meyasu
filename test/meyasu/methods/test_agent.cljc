@@ -5,7 +5,7 @@
   forecast mean vs present index; attention = notable spread AND tightening → resilience planner
   (G4); publish is aggregate-first (G3), no nudge/affiliate (G1), operator-gated (no-server-key)."
   (:require [clojure.test :refer [deftest is]]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [meyasu.methods.agent :as agent]))
 
 (defn- item*

@@ -4,7 +4,7 @@
   buyer-transparency intent, routes attention cards to a planner (G4), and the rendered HTML inlines
   the payload (self-contained, file://, no external fetch)."
   (:require [clojure.test :refer [deftest is]]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [clojure.java.io :as io]
             [json.compat :as json]
             [meyasu.viz.build-viz-data :as b]))

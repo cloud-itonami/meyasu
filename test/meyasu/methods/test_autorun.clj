@@ -7,7 +7,7 @@
   tamper detected; G2 a point-asserted/speculative forecast is REFUSED at fuse (never persisted);
   G1 no trade/speculation attr; append-only :db/add; a frozen golden head-CID regression guard."
   (:require [clojure.test :refer [deftest is run-tests]]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [clojure.java.io :as io]
             [meyasu.methods.autorun :as autorun]
             [meyasu.methods.kotoba :as k]))

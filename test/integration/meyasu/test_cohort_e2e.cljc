@@ -10,7 +10,7 @@
   Proves the cohort composes across actor boundaries with every gate held — and that the cohort's
   coverage is real cljc code, not per-actor claims."
   (:require [clojure.test :refer [deftest is]]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [kakaku.methods.agent :as kakaku]
             [meyasu.methods.agent :as meyasu]
             [mitooshi.methods.bridge-kakaku :as bk]
