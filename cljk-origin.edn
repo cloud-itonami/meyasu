@@ -1,0 +1,17 @@
+{:format :kotoba.cljk-origin/v1
+ :renamed-on "2026-09-11"
+ :decision "adr-2609111500-cljk-rename-all-clojure-source (com-junkawasaki/root 90-docs/adr; owner instruction 2026-09-11)"
+ :rule "value = the extension the file had before the rename. A path ending in .clj.cljk or .cljs.cljk kept it in the name because both platform files existed (or the plain target was taken)."
+ :origins
+ {"scripts/audit.cljk" ".clj"
+  "src/meyasu/methods/agent.cljk" ".cljc"
+  "src/meyasu/methods/autorun.cljk" ".clj"
+  "src/meyasu/methods/kotoba.cljk" ".clj"
+  "src/meyasu/methods/mesh.cljk" ".clj"
+  "src/meyasu/viz/build_viz_data.cljk" ".cljc"
+  "test/integration/meyasu/test_cohort_e2e.cljk" ".cljc"
+  "test/meyasu/methods/test_agent.cljk" ".cljc"
+  "test/meyasu/methods/test_autorun.cljk" ".clj"
+  "test/meyasu/methods/test_pipeline_cid.cljk" ".clj"
+  "test/meyasu/test_runner.cljk" ".clj"
+  "test/meyasu/viz/test_build_viz.cljk" ".cljc"}}
