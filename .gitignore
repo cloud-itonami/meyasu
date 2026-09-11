@@ -4,7 +4,7 @@
 /out/
 
 # Generated local ledger — the autonomous heartbeat appends one tx per cycle
-# (see src/meyasu/methods/autorun.clj). Deterministic output of data/seed.edn, not
+# (see src/meyasu/methods/autorun.cljk). Deterministic output of data/seed.edn, not
 # an event record; it stays on the machine that ran it, like every sibling
 # observatory (watari / kakaku / sukashi / meisai). manifest/observatories.edn
 # registers meyasu with :output-gitignored true — this line is what makes that true.

@@ -26,16 +26,16 @@ ossekai 御節介 → the aggregate-first publication discipline                
 
 ## Autonomous heartbeat (clj-native)
 
-- `src/meyasu/methods/autorun.clj` (+ `kotoba.clj`) — **Clojure-native SSoT** (ADR-2606142300 D1
+- `src/meyasu/methods/autorun.cljk` (+ `kotoba.clj`) — **Clojure-native SSoT** (ADR-2606142300 D1
   authored in Clojure, no Python twin). The autonomous fuse→persist loop: each cycle observes the
   OFFLINE fused-input snapshot (`data/seed.edn`) → `agent/handle-fuse` → **persists one
   content-addressed transaction** (the cards' Datoms) to the append-only **local** kotoba Datom log
-  (`src/meyasu/methods/kotoba.clj`), linking the previous CID into a verifiable commit-DAG. Deterministic /
+  (`src/meyasu/methods/kotoba.cljk`), linking the previous CID into a verifiable commit-DAG. Deterministic /
   resume-safe (cycle drives tx-id + as-of; observed-at is a fixed snapshot stamp → same cycles →
   same commit-DAG); NO external I/O. **G1/G2 hold by construction**: a point-asserted/speculative
   forecast is refused at fuse and never persisted; a card's forecast is written as a BAND, never a
   point; `:trade`/`:speculation` are unrepresentable. Publication / live kakaku·mitooshi ingest /
-  live-node push stay operator-gated (no-server-key). Invariants in `test/meyasu/methods/test_autorun.clj` (persist,
+  live-node push stay operator-gated (no-server-key). Invariants in `test/meyasu/methods/test_autorun.cljk` (persist,
   commit-DAG verify, determinism, tamper-detect, G2 refusal, G1 no-trade, frozen golden head-CID).
 
   ```sh

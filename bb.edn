@@ -2,4 +2,4 @@
  {test {:doc "Run standalone meyasu unit and pipeline tests"
         :task (shell "clojure -M -m meyasu.test-runner")}
   audit {:doc "Validate EDN, wire, and deprecated-artifact boundaries"
-         :task (shell "clojure -M scripts/audit.clj")}}}
+         :task (shell "clojure -M scripts/audit.cljk")}}}
