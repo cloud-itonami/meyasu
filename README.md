@@ -18,8 +18,8 @@ never emits a trade recommendation or point forecast.
 ## Verify
 
 ```sh
-bb test
-bb audit
+kbb -M:test
+kbb -M:audit
 ```
 
 The cross-repository cohort suite requires the Kakaku and Mitooshi repositories on

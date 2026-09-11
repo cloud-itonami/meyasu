@@ -39,7 +39,7 @@ ossekai 御節介 → the aggregate-first publication discipline                
   commit-DAG verify, determinism, tamper-detect, G2 refusal, G1 no-trade, frozen golden head-CID).
 
   ```sh
-  clojure -M -m meyasu.methods.autorun --cycles 3 --fresh
+  kbb -M -m meyasu.methods.autorun --cycles 3 --fresh
   ```
 
 ## Gates (the union of its siblings' invariants — do NOT weaken)
@@ -66,8 +66,8 @@ ossekai 御節介 → the aggregate-first publication discipline                
 ## Build & test
 
 ```sh
-bb test
-bb audit
+kbb -M:test
+kbb -M:audit
 ```
 
 ## Related
