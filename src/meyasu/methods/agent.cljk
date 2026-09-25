@@ -75,7 +75,7 @@
   (let [acc (reduce (fn [a item]
                       (try
                         (update a :cards conj (fuse-one item))
-                        (catch #?(:clj clojure.lang.ExceptionInfo :cljs :default) e
+                        (catch :default e
                           (update a :refused conj {"productId" (get item "productId")
                                                    "reason" (ex-message e)}))))
                     {:cards [] :refused []} (get state "items" []))]
